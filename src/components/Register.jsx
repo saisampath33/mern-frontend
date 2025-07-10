@@ -47,8 +47,8 @@ const [error,setError] = useState()
 const handleSubmit = async () =>{
     try{
     // const url = "http://localhost:2080/api/users/register";
-    const url1 = "https://mern-backend-bay-xi.vercel.app/api/users/register";
-    const result =  await axios.post(url1,user);
+    const url = "https://mern-backend-bay-xi.vercel.app/api/users/register";
+    const result =  await axios.post(url,user);
     setError("Data Saved Successfully")
     console.log(result);
     }catch(err){
