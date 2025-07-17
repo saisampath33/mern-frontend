@@ -35,6 +35,7 @@ export default function Users() {
   useEffect(() => {
     fetchUsers();
   }, [page]);
+  
   const handleDelete = async (id) => {
     try {
       const url = `${API_URL}/api/users/${id}`;
